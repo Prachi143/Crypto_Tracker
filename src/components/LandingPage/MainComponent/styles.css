@@ -1,0 +1,148 @@
+.flex-info{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 3rem;
+    right:0;
+}
+
+.track-crypto-heading,
+.real-time-heading{
+    font-size:3rem;
+    margin:0;
+}
+
+.track-crypto-heading{
+    color:var(--white);
+    -webkit-text-stroke-color:var(--white);
+    -webkit-text-stroke-width:1.5px;
+    transition: all 0.3s;
+    right:0px;
+    
+}
+
+.track-crypto-heading:hover{
+    color: var(--black);
+    -webkit-text-stroke-color: var(--white);
+    transition:all 0.3s;
+}
+
+.real-time-heading{
+    color: var(--blue);
+
+}
+
+.info-text {
+    font-size:1rem;
+    color:var(--grey);
+}
+
+.btn-flex{
+    display:flex;
+    justify-content: flex-start;
+    gap:2rem;
+    align-items: center;
+    margin-top: 4rem;
+    
+}
+
+.phone-container{
+    width: 50%;
+    position: relative;
+    padding: 2rem;
+}
+  
+  .Gradient-div {
+    position: relative;
+    width: 30%;
+    margin-left: auto;
+  }
+  
+  .Gradient {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 250px;
+    margin-top: 60px;
+  }
+  .IPHONE {
+    position: absolute;
+    right: 10px;
+    width: 300px;
+    z-index: 100;
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 1350px) {
+    .track-crypto-heading,
+.real-time-heading {
+      font-size: 5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .track-crypto-heading,
+    .real-time-heading {
+      font-size: 4rem;
+    }
+  
+    .Gradient {
+      right: 0px;
+      top: 60px;
+      width: 200px;
+    }
+    .IPHONE {
+      right: 0px;
+      width: 250px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .track-crypto-heading,
+  .real-time-heading {
+      font-size: 2rem;
+    }
+    .flex-info{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .track-crypto-heading,
+    .real-time-heading,
+    .info-text {
+      text-align: center;
+    }
+  
+    .info-text {
+      font-size: 0.8rem;
+    }
+  
+    .btn-flex {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .Gradient-div {
+      margin-top: 3rem;
+      margin-right: auto;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .Gradient,
+    .IPHONE {
+      left: 40px;
+    }
+  
+    .IPHONE {
+      left: 20px;
+    }
+  }
+  
+  /* 
+  clamp(minFontSize, ratio, maxFontSize)
+    formula to calculate the ratio
+    (max-size/design width) * 100
+    example: (70/1440)*100 */
+
+
